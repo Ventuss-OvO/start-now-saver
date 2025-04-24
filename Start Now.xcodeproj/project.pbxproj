@@ -6,8 +6,24 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		9645847A2DBAAB0A00AD6B80 /* thumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 964584792DBAAB0A00AD6B80 /* thumbnail@2x.png */; };
+		9645847B2DBAAB0A00AD6B80 /* thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = 964584782DBAAB0A00AD6B80 /* thumbnail.png */; };
+		9656BC2F2DBA92E8004AC1A8 /* background.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9656BC2C2DBA92E8004AC1A8 /* background.mp4 */; };
+		9656BC302DBA92E8004AC1A8 /* Gentium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9656BC2D2DBA92E8004AC1A8 /* Gentium.ttf */; };
+		965BE6922DB7C8BA0039A2B4 /* ScreenSaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 965BE6912DB7C8BA0039A2B4 /* ScreenSaver.framework */; };
+		968BD3A52DBA3E32006BE062 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 968BD3A42DBA3E32006BE062 /* AVFoundation.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		964584782DBAAB0A00AD6B80 /* thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumbnail.png; sourceTree = "<group>"; };
+		964584792DBAAB0A00AD6B80 /* thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thumbnail@2x.png"; sourceTree = "<group>"; };
+		9656BC2C2DBA92E8004AC1A8 /* background.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = background.mp4; sourceTree = "<group>"; };
+		9656BC2D2DBA92E8004AC1A8 /* Gentium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Gentium.ttf; sourceTree = "<group>"; };
+		965BE6912DB7C8BA0039A2B4 /* ScreenSaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScreenSaver.framework; path = System/Library/Frameworks/ScreenSaver.framework; sourceTree = SDKROOT; };
+		968BD3A42DBA3E32006BE062 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		96AA0C292DAE61B5006D598A /* Start Now.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Start Now.saver"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C68C16C64A762CBD7BA26D06 /* libPods-Start Now.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Start Now.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -23,17 +39,42 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				968BD3A52DBA3E32006BE062 /* AVFoundation.framework in Frameworks */,
+				965BE6922DB7C8BA0039A2B4 /* ScreenSaver.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9656BC2E2DBA92E8004AC1A8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9656BC2C2DBA92E8004AC1A8 /* background.mp4 */,
+				9656BC2D2DBA92E8004AC1A8 /* Gentium.ttf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		965BE6902DB7C8BA0039A2B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				968BD3A42DBA3E32006BE062 /* AVFoundation.framework */,
+				965BE6912DB7C8BA0039A2B4 /* ScreenSaver.framework */,
+				C68C16C64A762CBD7BA26D06 /* libPods-Start Now.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		96AA0C1F2DAE61B5006D598A = {
 			isa = PBXGroup;
 			children = (
+				964584782DBAAB0A00AD6B80 /* thumbnail.png */,
+				964584792DBAAB0A00AD6B80 /* thumbnail@2x.png */,
 				96AA0C2B2DAE61B5006D598A /* Start Now */,
+				965BE6902DB7C8BA0039A2B4 /* Frameworks */,
 				96AA0C2A2DAE61B5006D598A /* Products */,
+				9656BC2E2DBA92E8004AC1A8 /* Resources */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,10 +103,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 96AA0C322DAE61B5006D598A /* Build configuration list for PBXNativeTarget "Start Now" */;
 			buildPhases = (
+				9654501B2DB7D29700003B34 /* ShellScript */,
 				96AA0C242DAE61B5006D598A /* Headers */,
 				96AA0C252DAE61B5006D598A /* Sources */,
 				96AA0C262DAE61B5006D598A /* Frameworks */,
 				96AA0C272DAE61B5006D598A /* Resources */,
+				965450172DB7CDFE00003B34 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -75,8 +118,6 @@
 				96AA0C2B2DAE61B5006D598A /* Start Now */,
 			);
 			name = "Start Now";
-			packageProductDependencies = (
-			);
 			productName = "Start Now";
 			productReference = 96AA0C292DAE61B5006D598A /* Start Now.saver */;
 			productType = "com.apple.product-type.bundle";
@@ -119,10 +160,51 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9645847A2DBAAB0A00AD6B80 /* thumbnail@2x.png in Resources */,
+				9645847B2DBAAB0A00AD6B80 /* thumbnail.png in Resources */,
+				9656BC2F2DBA92E8004AC1A8 /* background.mp4 in Resources */,
+				9656BC302DBA92E8004AC1A8 /* Gentium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		965450172DB7CDFE00003B34 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# 确保目标目录存在\nmkdir -p \"$HOME/Library/Screen Savers\"\n\n# 仅当构建成功并且文件存在时才复制\nif [ -d \"${BUILT_PRODUCTS_DIR}/Start Now.saver\" ]; then\n    cp -Rf \"${BUILT_PRODUCTS_DIR}/Start Now.saver\" \"$HOME/Library/Screen Savers/\"\n    echo \"Screen saver installed successfully\"\nelse\n    echo \"Warning: Built screen saver not found\"\nfi\n";
+		};
+		9654501B2DB7D29700003B34 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# 安全地关闭屏保引擎（如果正在运行）\nif pgrep \"ScreenSaverEngine\" > /dev/null; then\n    killall ScreenSaverEngine\nfi\n\n# 等待进程完全退出\nsleep 1\n\n# 安全地删除旧的屏保文件（如果存在）\nif [ -d \"$HOME/Library/Screen Savers/Start Now.saver\" ]; then\n    rm -rf \"$HOME/Library/Screen Savers/Start Now.saver\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		96AA0C252DAE61B5006D598A /* Sources */ = {
@@ -258,12 +340,22 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEPLOYMENT_LOCATION = YES;
 				DEVELOPMENT_TEAM = X6WT9YRNVA;
 				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "Start-Now-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Start Now Clock";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSPrincipalClass = Start_NowView;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-Xlinker",
+					"-interposable",
+				);
+				"OTHER_LDFLAGS[arch=*]" = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "Polytime.Start-Now";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -277,12 +369,18 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEPLOYMENT_LOCATION = YES;
 				DEVELOPMENT_TEAM = X6WT9YRNVA;
 				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "Start-Now-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Start Now Clock";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSPrincipalClass = Start_NowView;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "Polytime.Start-Now";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
