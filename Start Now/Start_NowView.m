@@ -734,6 +734,9 @@ static BOOL isGentiumRegistered = NO;
         AVPlayerItem *playerItem = [AVPlayerItem playerItemWithURL:videoURL];
         self.videoPlayer = [AVPlayer playerWithPlayerItem:playerItem];
         
+        // 设置视频静音
+        self.videoPlayer.volume = 0.0;
+        
         // 创建视频图层
         self.videoPlayerLayer = [AVPlayerLayer playerLayerWithPlayer:self.videoPlayer];
         self.videoPlayerLayer.frame = self.bounds;

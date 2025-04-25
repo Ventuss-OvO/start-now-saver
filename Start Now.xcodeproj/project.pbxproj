@@ -345,7 +345,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "Start-Now-Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Start Now Clock";
+				INFOPLIST_KEY_CFBundleDisplayName = "Start Now Screensaver";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSPrincipalClass = Start_NowView;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
@@ -374,7 +374,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "Start-Now-Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Start Now Clock";
+				INFOPLIST_KEY_CFBundleDisplayName = "Start Now Screensaver";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSPrincipalClass = Start_NowView;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
