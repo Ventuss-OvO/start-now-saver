@@ -8,3 +8,7 @@ DerivedData/
 
 # macOS
 .DS_Store
+
+# Cursor
+.cursor/
+

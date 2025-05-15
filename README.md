@@ -1,64 +1,93 @@
 # Start Now Screensaver
 
-一款 macOS 屏幕保护程序，显示"Think Different"和"Start Now"等激励文字，带有动态效果。
+**Draw inspiration from great minds every time you wake up your Mac**
 
-## 启动说明
-- Start Now.xcodeproj 启动 Xcode
-- Shift + Command + K 清空缓存
-- Command + B 编译
-- Script/clear_screensaver_cache.command 清除系统缓存
-- Script/alias.saver 快速安装新 .saver 文件
+![Start Now Screensaver](Resources/Now.png)
 
+[**Buy this screensaver**](https://ventuss.gumroad.com/l/startnow?utm_campaign=reddit-launch&utm_medium=posts&utm_source=reddit)
 
-## 功能特点
+## Introduction
 
-- 显示两行文字：固定的"Think Different"和动态变化的"Start Now"系列语句
-- 采用渐变色文字效果
-- 支持视频背景
-- 可配置出生年份，显示相应年龄
+The power of habit is profound. When a default screensaver appears, we're often tempted to drift into YouTube and Instagram.
 
-## 安装说明
+Your Mac, however, is a productivity companion—created by Steve Jobs to help you do exceptional work. Remember this purpose!
 
-1. 下载最新的发布版本
-2. 双击`Start Now.saver`文件安装
-3. 在系统设置中选择"屏幕保护程序"，启用"Start Now"
+We've been inspired by countless visionaries: Gandhi, The Beatles, Hepburn, Churchill, Muhammad Ali...
 
-## 配置选项
+This screensaver transforms your Mac's idle moments into a source of motivation with a simple yet powerful message:
 
-屏幕保护程序提供以下配置选项：
-- 出生年份设置：显示"in your XXs"时会根据您设置的出生年份计算年龄
+> Think Different & Start Now
 
-## 技术栈与实现方式
+## Features
 
-### 核心技术
-- **Objective-C**: 项目基于 Objective-C 实现，使用 ScreenSaver 框架
-- **Core Animation**: 文字渐变效果和动画通过 CALayer、CATextLayer、CAGradientLayer 实现
-- **AVFoundation**: 视频背景播放和控制
-- **Core Text**: 自定义字体加载与渲染
-- **NSDistributedNotificationCenter**: 处理屏幕保护程序生命周期事件
+- **Inspiring Text**: Displays "Think Different" and dynamic "Start Now" series messages
+- **Personalized Age Display**: Shows "in your XXs" based on your birth year
+- **Elegant Gradient Text**: Beautiful animated text effects
+- **Video Background**: Subtle video backdrop enhances the visual experience
+- **Authentic Mac Screensaver**: Native .saver file format
 
-### 主要组件
-- **FontManager**: 自定义字体管理和注册
-- **Start_NowView**: 主视图类，继承自 ScreenSaverView
-- **打字动画系统**: 实现了打字输入和擦除效果的动画
-- **配置表单**: 通过 NSWindow 实现的用户配置界面
+## Inspiration Sources
 
-### 架构特点
-- **分层设计**: 视频背景层、半透明遮罩层、文字渲染层
-- **响应式布局**: 自动适应全屏和预览窗口的不同尺寸
-- **持久化配置**: 使用 NSUserDefaults 存储用户设置
-- **内存优化**: 针对 macOS Sonoma 中的内存泄漏问题进行修复
+- [Apple "Think Different" Campaign](https://www.youtube.com/watch?v=cpzvwkR1RYU)
+- Start in November Image 
 
-### 文件结构
-- **Start_NowView.h/m**: 主要实现文件
-- **Resources/**: 包含 Gentium 字体文件和背景视频
-- **thumbnail.png/thumbnail@2x.png**: 屏保缩略图
+![Start in November](Resources/Start%20in%20November.jpg)
 
-## 开发环境
+## System Requirements
 
-- Xcode 15.0+
+- Mac with Apple Silicon (M-series chip)
 - macOS 14.0+ (Sonoma)
+- Xcode 15.0+ (for development)
 
-## 许可证
+## Best Practice
 
-[许可证类型] - 详情请参见 LICENSE 文件
+Set up Hot Corners to activate the screensaver instantly:
+1. Go to Settings > Desktop & Dock > Hot Corners
+2. Choose any corner to activate the screen saver
+3. Whenever you step away from your Mac, simply move your cursor to that corner—this keeps your device both secure and inspiring
+
+## Configuration Options
+
+In the screensaver settings, you can configure:
+- **Birth Year**: Customize the "in your XXs" display according to your age
+
+## Development Guide
+
+### Getting Started
+- Open `Start Now.xcodeproj` in Xcode
+- Press Shift + Command + K to clean the build cache
+- Press Command + B to compile
+
+### Useful Scripts
+- `Script/clear_screensaver_cache.command`: Clears system cache for the screensaver
+- `Script/alias.saver`: Quickly installs new .saver files
+
+### Technical Implementation
+
+#### Core Technologies
+- **Objective-C**: Project implemented using the ScreenSaver framework
+- **Core Animation**: Text gradient effects and animations via CALayer, CATextLayer, CAGradientLayer
+- **AVFoundation**: Video background playback and control
+- **Core Text**: Custom font loading and rendering
+- **NSDistributedNotificationCenter**: Handling screensaver lifecycle events
+
+#### Key Components
+- **FontManager**: Custom font management and registration
+- **Start_NowView**: Main view class, inherits from ScreenSaverView
+- **Typing Animation System**: Implements typing and erasing effect animations
+- **Configuration Form**: User settings interface implemented with NSWindow
+
+#### Architecture
+- **Layered Design**: Video background layer, semi-transparent mask layer, text rendering layer
+- **Responsive Layout**: Automatically adapts to fullscreen and preview window dimensions
+- **Persistent Configuration**: User settings stored using NSUserDefaults
+- **Memory Optimization**: Fixes for memory leaks in macOS Sonoma
+
+#### File Structure
+- **Start_NowView.h/m**: Main implementation files
+- **Resources/**: Contains Gentium font files and background video
+- **thumbnail.png/thumbnail@2x.png**: Screensaver thumbnails
+
+## License
+
+[MIT License](LICENSE) - See the LICENSE file for details
