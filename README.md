@@ -1,10 +1,12 @@
 # Start Now Screensaver
 
-**Draw inspiration from great minds every time you wake up your Mac**
-
 ![Start Now Screensaver](Resources/Now.png)
 
-[**Buy this screensaver**](https://ventuss.gumroad.com/l/startnow?utm_campaign=reddit-launch&utm_medium=posts&utm_source=reddit)
+**Draw inspiration from great minds every time you wake up your Mac**
+
+[Preview on YouTube](https://www.youtube.com/watch?v=rpTPeSgN2ig)
+
+[**I want this!**](https://ventuss.gumroad.com/l/startnow?utm_campaign=reddit-launch&utm_medium=posts&utm_source=reddit)
 
 ## Introduction
 
@@ -90,4 +92,12 @@ In the screensaver settings, you can configure:
 
 ## License
 
-[MIT License](LICENSE) - See the LICENSE file for details
+This work is licensed under a [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](https://creativecommons.org/licenses/by-nc-nd/4.0/) (CC BY-NC-ND 4.0).
+
+You are free to:
+- **Share** — copy and redistribute the material in any medium or format for personal use
+
+Under the following terms:
+- **Attribution** — You must give appropriate credit, provide a link to the license, and indicate if changes were made.
+- **NonCommercial** — You may not use the material for commercial purposes.
+- **NoDerivatives** — If you remix, transform, or build upon the material, you may not distribute the modified material.
