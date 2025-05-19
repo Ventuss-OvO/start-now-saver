@@ -6,8 +6,6 @@
 
 [Preview on YouTube](https://www.youtube.com/watch?v=rpTPeSgN2ig)
 
-[**I want this!**](https://ventuss.gumroad.com/l/startnow?utm_campaign=reddit-launch&utm_medium=posts&utm_source=reddit)
-
 ## Introduction
 
 The power of habit is profound. When a default screensaver appears, we're often tempted to drift into YouTube and Instagram.
